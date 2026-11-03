@@ -46,4 +46,9 @@ public class Database implements IDatabase {
         }
     }
 
+    @Override
+    public void closeConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }

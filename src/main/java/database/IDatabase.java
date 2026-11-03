@@ -16,4 +16,6 @@ public interface IDatabase {
 
     void Connection();
 
+    public void closeConnection();
+
 }

@@ -14,8 +14,6 @@ public interface IDatabase {
 
     Connection getConnection();
 
-    void Connection();
-
     public void closeConnection();
 
 }

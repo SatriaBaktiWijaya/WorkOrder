@@ -36,7 +36,7 @@ public class Database implements IDatabase {
     }
 
     @Override
-    public void Connection() {
+    public void closeConnection() {
         try {
             if (connection != null && !connection.isClosed()) {
                 connection.close();
@@ -45,10 +45,4 @@ public class Database implements IDatabase {
             System.err.println("Gagal menutup koneksi: " + e.getMessage());
         }
     }
-
-    @Override
-    public void closeConnection() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
 }
